@@ -41,7 +41,7 @@ pub fn Footer() -> Element {
                     span {
                         a {
                             class: "source-code",
-                            href: "https://github.com/harryagstian",
+                            href: "https://github.com/harryagstian/homepage",
                             target: "_blank",
                             { format!("Version: {}", version) }
                         }
