@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Proxima Nova", sans-serif;
+  }
+}
+
+@layer components {
+  body {
+    @apply bg-grey-bluish text-white m-0 justify-center w-svw h-svh overflow-hidden;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  .content {
+    @apply mx-auto bg-transparent;
+  }
+
+  /* navbar */
+  .navbar {
+    @apply flex absolute top-0 inset-x-0 justify-center p-[3svh] text-3xl;
+  }
+
+  .navbar-menu {
+    @apply flex list-none m-0 p-0;
+  }
+
+  .navbar-menu li {
+    @apply m-1.5;
+  }
+
+  .navbar-link {
+    @apply p-3;
+  }
+
+  .navbar-link:hover {
+    @apply bg-zinc-600 rounded-lg;
+  }
+
+  /* footer */
+  .footer {
+    @apply grid absolute bottom-0 inset-x-0 justify-center p-[0.5svh];
+  }
+
+  .footer-links {
+    @apply flex p-[1svh] justify-self-center;
+  }
+
+  .footer-links span {
+    @apply inline-flex m-2.5;
+  }
+
+  .footer-notes {
+    @apply p-[1svh];
+  }
+
+  .footer-notes span {
+    @apply grid justify-center p-[0.2vh];
+  }
+
+  .source-code:hover {
+    @apply text-blue-500;
+  }
+}

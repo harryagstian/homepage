@@ -1,0 +1,113 @@
+{
+    "particles": {
+        "number": {
+            "value": 35,
+            "limit": 70,
+            "density": {
+                "enable": true,
+                "value_area": 600
+            }
+        },
+        "color": {
+            "value": [
+                "#4C3BCF",
+                "#4B70F5",
+                "#3DC2EC",
+                "#FC4100",
+                "#FFC55A",
+                "#2C4E80"
+            ]
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            }
+        },
+        "opacity": {
+            "value": 0.6,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 12,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 10,
+                "size_min": 2,
+                "sync": false
+            }
+        },
+        "links": {
+            "enable": true,
+            "color": "#2ec8df",
+            "opacity": 0.4,
+            "distance": 150,
+            "width": 1.3
+        },
+        "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "window",
+        "events": {
+            "onhover": {
+                "enable": false,
+                "mode": "repulse"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 400,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 0.8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 200,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "fullScreen": {
+      "zIndex": -5
+    },
+    "retina_detect": true
+}
