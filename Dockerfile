@@ -22,13 +22,13 @@ RUN rustup target add wasm32-unknown-unknown
 
 RUN curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
 
-RUN cargo binstall trunk --no-confirm
+RUN cargo binstall dioxus-cli --no-confirm
 
 COPY src ./src
 COPY Cargo.toml Cargo.lock Dioxus.toml ./
 COPY --from=node-builder /opt/homepage/assets/tailwind.css ./assets/
 
-RUN trunk build --release
+RUN dx build --release
 
 FROM nginx:1.27
 
