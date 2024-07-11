@@ -9,6 +9,10 @@ RUN npm install
 
 COPY tailwind.config.js input.css ./
 
+# tailwind only compiles whatever classes that we use, hence we need to add src
+# https://tailwindcss.com/docs/content-configuration
+COPY src ./src
+
 RUN npx tailwindcss -i ./input.css -o ./assets/tailwind.css --minify
 
 # build wasm
