@@ -1,5 +1,7 @@
 Source code for [my personal homepage](https://harryagustian.xyz/)
 
+Written in Rust, built to Web Assembly using Dioxus and styled with Tailwind CSS
+
 # Development
 
 ## Pre-requisites
